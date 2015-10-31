@@ -1,6 +1,4 @@
 var gulp = require('gulp')
-var path = require('path')
-var childProcess = require('child_process')
 var config = require('../webpack/config')
 var webpackBuild = require('../webpack/build')
 var webpackDevServer = require('../webpack/server')

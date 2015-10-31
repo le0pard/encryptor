@@ -66,7 +66,7 @@ module.exports = function(currentEnv) {
     ]
   }
 
-  var appScripts = ['./src/app.js']
+  var appScripts = ['./src/index.js']
 
   /* eslint-disable camelcase */
   var entryPoints = {

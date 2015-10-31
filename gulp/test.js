@@ -9,6 +9,6 @@ gulp.task('set-test-env', function() {
   process.env.APP_LOCALE = 'en'
 })
 
-gulp.task('test', function(done) {
+gulp.task('test', ['set-test-env'], function(done) {
   runSequence('eslint', 'karma', done)
 })

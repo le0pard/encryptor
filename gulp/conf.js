@@ -11,7 +11,7 @@ module.exports = {
   dist: {
     assets:       './src/assets/**/*',
     assetsDest:   './dist/assets',
-    electron:     './src/electron/*',
+    electron:     './electron/*',
     electronDest: './dist'
   }
 }
