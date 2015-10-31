@@ -11,6 +11,7 @@ process.env.NODE_PATH = [
 
 process.env.APP_LOCALE = process.env.APP_LOCALE || 'en'
 
+require('./gulp/static_files')
 require('./gulp/dist')
 require('./gulp/dev')
 
@@ -18,4 +19,4 @@ require('./gulp/eslint')
 require('./gulp/karma')
 require('./gulp/test')
 
-gulp.task('default', ['dev'])
+gulp.task('default', ['server'])

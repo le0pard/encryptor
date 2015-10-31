@@ -8,4 +8,4 @@ gulp.task('set-prod-env', function() {
   process.env.APP_LOCALE = 'en'
 })
 
-gulp.task('dist', ['set-prod-env', 'build'])
+gulp.task('dist', ['set-prod-env', 'copy-static-files', 'build'])

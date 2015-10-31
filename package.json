@@ -13,9 +13,9 @@
   "private": false,
   "scripts": {
     "test": "gulp test",
-    "build-js": "gulp release",
-    "start": "electron .",
-    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
+    "build-app": "gulp dist",
+    "start": "electron ./src/electron",
+    "build": "electron-packager dist $npm_package_productName --out=release --prune --asar --all --version=$npm_package_electronVersion"
   },
   "electronVersion": "0.34.2",
   "engines": {
