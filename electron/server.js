@@ -7,7 +7,7 @@ const DEV_URL = 'http://localhost:8888/dist'
 
 const app = express()
 
-app.use('/assets', express.static('assets'))
+app.use('/assets', express.static(path.resolve(__dirname, '../src/assets')))
 
 app.use(modRewrite([
   `^/app(.*)$ ${DEV_URL}/app$1 [P]`
