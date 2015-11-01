@@ -1,7 +1,12 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import MainPage from './app/index'
+import {IntlProvider} from 'react-intl'
+import MainPage from './app'
+
+const currentLocale = process.env.APP_LOCALE
 
 ReactDom.render((
-  <MainPage />
+  <IntlProvider locale={currentLocale}>
+    <MainPage />
+  </IntlProvider>
 ), document.getElementById('app'))

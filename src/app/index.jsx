@@ -1,12 +1,14 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 
-export default class Index extends React.Component {
+class MainPage extends React.Component {
   render() {
     return (
       <DocumentTitle title='Encryptor'>
-        <h1>Hello world!</h1>
+        <h1>Hello</h1>
       </DocumentTitle>
     )
   }
 }
+
+export default MainPage

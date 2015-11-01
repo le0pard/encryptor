@@ -1,5 +1,5 @@
 import {Dispatcher} from 'flux'
-import {assign} from 'lodash'
+import assign from 'lodash/object/assign'
 import Logger from '../utils/Logger'
 
 const AppDispatcher = assign(new Dispatcher(), {
