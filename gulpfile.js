@@ -19,4 +19,4 @@ require('./gulp/eslint')
 require('./gulp/karma')
 require('./gulp/test')
 
-gulp.task('default', ['server'])
+gulp.task('default', ['dev'])
