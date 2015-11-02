@@ -3,7 +3,5 @@ dist
 node_modules
 npm-debug.log
 *.sublime-workspace
-tests/reports
-tests/screenshots
 webpack.stats.json
 *.log
