@@ -1,5 +1,4 @@
 import CryptoJS from 'crypto-js'
-import {assign} from 'lodash'
 
 class CryptoUtils {
   constructor(keySize = 256, keyIterations = 1000) {
@@ -14,7 +13,7 @@ class CryptoUtils {
   }
 
   generateHex() {
-    return CryptoJS.lib.WordArray.random(128/8).toString(CryptoJS.enc.Hex)
+    return CryptoJS.lib.WordArray.random(128 / 8).toString(CryptoJS.enc.Hex)
   }
 
   generateKey(passPhrase, salt) {
@@ -22,7 +21,7 @@ class CryptoUtils {
       passPhrase,
       CryptoJS.enc.Hex.parse(salt),
       {
-        keySize: (this.keySize / 32),
+        keySize:    (this.keySize / 32),
         iterations: this.keyIterations
       }
     )
@@ -43,9 +42,9 @@ class CryptoUtils {
 
   cryptOptions(iv) {
     return {
-      mode: CryptoJS.mode.CBC,
+      mode:    CryptoJS.mode.CBC,
       padding: CryptoJS.pad.Pkcs7,
-      iv: CryptoJS.enc.Hex.parse(iv)
+      iv:      CryptoJS.enc.Hex.parse(iv)
     }
   }
 }
