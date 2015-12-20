@@ -4,5 +4,5 @@ import enMessages from './locales/en'
 
 addLocaleData(enLocaleData)
 
-export const currentLocale = process.env.APP_LOCALE
+export const currentLocale = process.env.APP_LOCALE || 'en'
 export const messages = enMessages
